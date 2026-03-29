@@ -15,6 +15,7 @@ public class BasePage {
     public void setUp(){
         driver = DriverClass.init();
         driver.get("https://the-internet.herokuapp.com/");
+        driver.manage().window().maximize();
     }
 
     @AfterTest
